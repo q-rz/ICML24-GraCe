@@ -10,6 +10,8 @@ The code was tested under the following dependencies:
 - Tqdm 4.66.1
 - NumPy 1.24.3
 - NetworkX 3.1
+- Matplotlib 3.7.4
+- Seaborn 0.12.2
 
 ## Usage
 

@@ -4,8 +4,13 @@ Gradient compressed sensing: A query-efficient gradient estimator for high-dimen
 
 ## Dependencies
 
-TODO
+The code was tested under the following dependencies:
+
+- Python 3.10.12
+- Tqdm 4.66.1
+- NumPy 1.24.3
+- NetworkX 3.1
 
 ## Usage
 
-TODO
+Please run `test_grace.py`. The detailed usage will be posted soon.

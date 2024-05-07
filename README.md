@@ -1,4 +1,4 @@
-# ICML24-GraCe
+# GraCe (ICML 2024)
 
 Gradient compressed sensing: A query-efficient gradient estimator for high-dimensional zeroth-order optimization
 

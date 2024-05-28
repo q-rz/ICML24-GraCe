@@ -2,6 +2,20 @@
 
 Gradient compressed sensing: A query-efficient gradient estimator for high-dimensional zeroth-order optimization
 
+If you find our work useful, please consider citing our paper:
+
+```bibtex
+@inproceedings{qiu2024gradient,
+  title={Gradient compressed sensing: A query-efficient gradient estimator for high-dimensional zeroth-order optimization},
+  author={Ruizhong Qiu and Hanghang Tong},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  year={2024},
+  number={235},
+  publisher={PMLR},
+  address={Vienna, Austria}
+}
+```
+
 ## Dependencies
 
 The code was tested under the following dependencies:

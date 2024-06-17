@@ -23,6 +23,7 @@ The code was tested under the following dependencies:
 - Python 3.10.12
 - Tqdm 4.66.1
 - NumPy 1.24.3
+- SkLearn 1.2.2
 - NetworkX 3.1
 - Matplotlib 3.7.4
 - Seaborn 0.12.2

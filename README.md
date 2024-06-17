@@ -8,9 +8,7 @@ Gradient compressed sensing: A query-efficient gradient estimator for high-dimen
   author={Ruizhong Qiu and Hanghang Tong},
   booktitle={Proceedings of the 41st International Conference on Machine Learning},
   year={2024},
-  number={235},
-  publisher={PMLR},
-  address={Vienna, Austria}
+  number={235}
 }
 ```
 

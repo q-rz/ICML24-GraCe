@@ -2,8 +2,6 @@
 
 Gradient compressed sensing: A query-efficient gradient estimator for high-dimensional zeroth-order optimization
 
-If you find our work useful, please consider citing our paper:
-
 ```bibtex
 @inproceedings{qiu2024gradient,
   title={Gradient compressed sensing: A query-efficient gradient estimator for high-dimensional zeroth-order optimization},
@@ -18,7 +16,7 @@ If you find our work useful, please consider citing our paper:
 
 ## Dependencies
 
-The code was tested under the following dependencies:
+Our code was tested under the following dependencies:
 
 - Python 3.10.12
 - Tqdm 4.66.1
@@ -30,4 +28,16 @@ The code was tested under the following dependencies:
 
 ## Usage
 
-Please run `test_grace.py`. The detailed usage will be posted soon.
+We provide our implementation for our method GraCe as well as baseline methods, where `test_{method}.py` is the code for the corresponding `{method}` (e.g., `grace`). 
+
+Before running the code, please configure via the `args` variable in the code. Every method has the following arguments:
+- `benchmark`: the benchmark function (choices: `distance`/`magnitude`/`attack`);
+- `max_steps`: maximum number of steps for the optimization process;
+- `max_queries`: maximum number of queries that can be used by the optimization method;
+- `lr`: step size $\eta$ (a.k.a. learning rate) for each optimization step;
+- `eps`: finite difference $\epsilon$ for zeroth-order gradient estimation (i.e.,.
+
+For our method GraCe, there are a few additional arguments available:
+- `reps`: number $m$ of repeats in GraCe;
+- `gamma`: group size parameter $\gamma$ (the group size is $n:=\big\lfloor\frac{\gamma d}s\big\rfloor$);
+- `div`: initial division parameter $D\_1$ (the division schedule $\\{D\_r\\}\_{r\ge1}$ is given by $D\_{r+1}:=\lfloor D\_r^{3/2}\rfloor$).

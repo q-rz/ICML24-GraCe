@@ -13,7 +13,6 @@ args = Dict(
     reps = 1,
     gamma = 0.7,
     div = 10,
-    div_coef = 1.,
 )
 
 class Optimizer(BaseOptimizer):
@@ -48,7 +47,7 @@ class Optimizer(BaseOptimizer):
                         yv = self.bm.query1(v)
                         targ = max(0, min(pos[-1], round((yv - y0) / (yu - y0))))
                         coos = coos[pos == targ]
-                    div = int((div ** 1.5) * args.div_coef)
+                    div = int(div ** 1.5)
                 cands.extend(coos.tolist())
         cands = np.unique(cands)
         y1 = []

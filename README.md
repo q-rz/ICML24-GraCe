@@ -29,11 +29,11 @@ Our code was tested under the following dependencies:
 We provide our implementation for our method GraCe as well as baseline methods, where `test_{method}.py` is the code for the corresponding `{method}` (e.g., `grace`). 
 
 Before running the code, please configure via the `args` variable in the code. Every method has the following arguments:
-- `benchmark`: the benchmark function (choices: `distance`/`magnitude`/`attack`);
-- `max_steps`: maximum number of steps for the optimization process;
+- `benchmark`: the benchmark function (options: `distance`/`magnitude`/`attack`);
+- `max_steps`: maximum number $T$ of steps for the optimization process;
 - `max_queries`: maximum number of queries that can be used by the optimization method;
 - `lr`: step size $\eta$ (a.k.a. learning rate) for each optimization step;
-- `eps`: finite difference $\epsilon$ for zeroth-order gradient estimation (i.e.,.
+- `eps`: finite difference $\epsilon$ for zeroth-order gradient estimation.
 
 For our method GraCe, there are a few additional arguments available:
 - `reps`: number $m$ of repeats in GraCe;

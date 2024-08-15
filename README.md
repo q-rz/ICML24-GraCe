@@ -12,6 +12,8 @@ Gradient compressed sensing: A query-efficient gradient estimator for high-dimen
 }
 ```
 
+<center><img src="https://raw.githubusercontent.com/q-rz/ICML24-GraCe/main/fig-landscape.svg" alt="Illustration of sparse and dense gradients" /></center>
+
 ## Dependencies
 
 Our code was tested under the following dependencies:
